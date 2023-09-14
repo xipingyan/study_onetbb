@@ -11,6 +11,10 @@
 #include <chrono>
 #include <thread>
 
+/*****************************************************
+ 1: tbb support multi-threads
+ 2: second param:(lhs + rhs;), will be executed in main thread.
+ ****************************************************/
 void test_parallel_reduce()
 {
     int64_t my_range = 30000000;
