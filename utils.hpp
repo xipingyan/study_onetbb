@@ -22,9 +22,13 @@
 #ifndef TIME_DIFF
 #define TIME_DIFF(t2, t1) std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1).count()
 #endif
+#ifndef PRINT_TIME_DIFF
+#define PRINT_TIME_DIFF(t2, t1) std::cout << "Take time: " << TIME_DIFF(t2, t1) << " ms" << std::endl
+#endif
 
 #ifndef PRINT_THREAD_ID
 #define PRINT_THREAD_ID() std::cout << __FUNCTION__ << ":" << __LINE__ << ": Thread id:" << std::this_thread::get_id() << std::endl
 #endif
 
 void test_parallel_reduce();
+void test_scaled_dot_product_attention();

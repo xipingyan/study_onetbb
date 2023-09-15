@@ -10,7 +10,8 @@ int main(int, char **)
     PRINT_ITM(gc.active_value(tbb::global_control::max_allowed_parallelism));
 
     //
-    test_parallel_reduce();
+    // test_parallel_reduce();
+    test_scaled_dot_product_attention();
 
     return 0;
 }
