@@ -1,5 +1,5 @@
 # study_onetbb
-Learn how to optimize cpp code based on oneTBB.
+Learn how to optimize cpp code based on oneTBB(Threading Building Blocks).
 
 # How to build and run
 

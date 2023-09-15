@@ -7,6 +7,6 @@ find_package(TBB REQUIRED)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-include_directories(/opt/intel/oneapi/tbb/latest/include/)
-add_executable(${PRJ_NAME} test.cpp)
+include_directories(/opt/intel/oneapi/tbb/latest/include/ ./)
+add_executable(${PRJ_NAME} main.cpp test_parallel_reduce.cpp)
 target_link_libraries(${PRJ_NAME} TBB::tbb)
